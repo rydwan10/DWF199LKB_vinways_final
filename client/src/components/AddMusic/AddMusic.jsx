@@ -99,15 +99,18 @@ function AddMusic() {
     try {
       setLoading(true);
       const response = await API.delete(`/musics/${musicId}`);
-      setOpen(false);
-      setLoading(false);
-      dispatch({
-        type: SET_MODAL,
-        payload: {
-          isOpen: true,
-          message: "Music deleted successfully!",
-        },
-      });
+      console.log(response);
+      if (response.status === 200) {
+        setOpen(false);
+        setLoading(false);
+        dispatch({
+          type: SET_MODAL,
+          payload: {
+            isOpen: true,
+            message: "Music deleted successfully!",
+          },
+        });
+      }
       setFetching((prev) => !prev);
     } catch (err) {
       console.log(err);
@@ -134,6 +137,7 @@ function AddMusic() {
   useEffect(() => {
     fetchArtists();
     fetchMusics();
+    // eslint-disable-next-line
   }, [fetching]);
 
   const classes = makeStyles();

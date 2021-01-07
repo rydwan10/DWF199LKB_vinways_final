@@ -73,6 +73,7 @@ function Transactions() {
 
   useEffect(() => {
     getAllTransactions();
+    // eslint-disable-next-line
   }, [fetch]);
 
   return (

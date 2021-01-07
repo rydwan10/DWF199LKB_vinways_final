@@ -124,6 +124,7 @@ function AddArtist() {
   };
   useEffect(() => {
     fetchArtists();
+    // eslint-disable-next-line
   }, [fetching]);
 
   const classes = makeStyles();

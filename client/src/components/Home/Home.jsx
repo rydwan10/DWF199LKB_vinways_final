@@ -38,6 +38,7 @@ function Home() {
 
   useEffect(() => {
     fetchMusics();
+    // eslint-disable-next-line
   }, []);
 
   return (

@@ -15,6 +15,7 @@ const Logout = () => {
       setIsLogout(true);
     };
     dispatchLogout();
+    // eslint-disable-next-line
   }, []);
 
   return isLogout && <Redirect to="/login" />;

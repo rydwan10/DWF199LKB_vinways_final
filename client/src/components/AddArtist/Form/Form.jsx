@@ -139,6 +139,7 @@ function Form({ setFetch, editedArtistData, setEditedArtistData }) {
       setInput({ ...editedArtistData });
       setCategory(editedArtistData.category);
     }
+    // eslint-disable-next-line
   }, [editedArtistData]);
 
   const classes = makeStyles();

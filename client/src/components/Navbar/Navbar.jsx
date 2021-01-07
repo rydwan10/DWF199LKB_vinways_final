@@ -18,7 +18,7 @@ import {
 import { withStyles } from "@material-ui/core/styles";
 
 import { AppContext } from "../../context/appContext";
-import { LOGOUT, SET_MODAL } from "../../constant/actionTypes";
+import { LOGOUT } from "../../constant/actionTypes";
 
 // icons
 import navIcon from "../../assets/navIcon.svg";
