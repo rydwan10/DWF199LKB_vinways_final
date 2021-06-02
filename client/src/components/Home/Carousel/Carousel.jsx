@@ -28,7 +28,7 @@ function Carousel() {
         marginTop: "1rem",
         background:
           "radial-gradient(circle, rgba(80, 72, 222, 0) 0%, rgb(12 15 42 / 17%) 49%, rgb(27 29 48) 100%)",
-        borderRadius: "0px",
+        borderRadius: "12px",
       }}
     >
       <Slider {...settings}>
